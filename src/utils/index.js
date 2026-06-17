@@ -1,0 +1,1 @@
+export { getAllProductsForAutocompletion, getCategoriesFromProducts, slugify } from "./utils";

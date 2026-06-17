@@ -1,0 +1,159 @@
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--surface-color);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+  cursor: pointer;
+  border: 0.5px solid var(--border-light-color);
+  max-height: 600px;
+}
+
+.carousel .card {
+  height: 420px;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(42, 33, 55, 0.08);
+  border-color: var(--primary-color);
+}
+
+.card:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(42, 33, 55, 0.06);
+}
+
+.card_image_wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--background-tertiary-color);
+}
+
+.card_image,
+.card_hover_image {
+  background: var(--background-tertiary-color);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card_image {
+  object-fit: cover;
+  transition: opacity 0.35s ease;
+}
+
+.card_hover_image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.card:hover .card_image {
+  opacity: 0;
+}
+
+.card:hover .card_hover_image {
+  opacity: 1;
+}
+
+.card_badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--background-color);
+  color: var(--text-secondary-color);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 0.5px solid var(--border-color);
+  z-index: 2;
+}
+
+.card_content {
+  padding: 14px 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.card_title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--text-color);
+  line-height: 1.3;
+}
+
+.card_sizes {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 0.5px solid var(--border-light-color);
+}
+
+.card_size_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  font-size: 1rem;
+  color: var(--text-secondary-color);
+}
+
+.card_size_item_price {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.card_image_placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--text-muted-color);
+  background-color: var(--background-tertiary-color);
+}
+
+.card_image_placeholder span {
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
+  color: var(--text-muted-color);
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-link {
+  animation: cardFadeIn 0.25s ease both;
+}

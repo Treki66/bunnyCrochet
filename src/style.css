@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@300;400;500&display=swap');
+@import "./variables.css";
+
+h1, h2, h3 {
+  font-family: "Fraunces", serif;
+  color: var(--text-color);
+}
+
+p {
+  white-space: pre-line;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  background: var(--background-color);
+}
+
+.pageContent {
+  min-height: calc(100vh - 60px - 52px);
+}

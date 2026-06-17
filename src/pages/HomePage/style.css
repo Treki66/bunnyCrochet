@@ -1,0 +1,275 @@
+.hero {
+  position: relative;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+  background-image: url("/backgroundImage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
+  padding: 4rem 6rem;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(252, 250, 255, 0.78) 40%, transparent 80%);
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 520px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--text-color);
+}
+
+.hero-subtitle {
+  color: var(--text-secondary-color);
+  line-height: 1.7;
+  font-size: 0.95rem;
+  max-width: 400px;
+  white-space: normal;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: var(--text-inverse-color);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-primary:hover { background: var(--primary-hover-color); }
+.btn-primary:active { background: var(--primary-active-color); }
+
+.btn-secondary {
+  padding: 10px 20px;
+  background: transparent;
+  color: var(--text-color);
+  border: 0.5px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-secondary:hover { border-color: var(--primary-color); color: var(--primary-color); }
+.btn-secondary:active { border-color: var(--primary-active-color); color: var(--primary-active-color); }
+
+/* Section blocks */
+.section-block {
+  margin: 1rem 3rem 3rem;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.section-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted-color);
+  margin: 0;
+}
+
+.section-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.section-link {
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: 0.5px solid var(--primary-color);
+  background: var(--primary-color);
+  color: var(--text-inverse-color);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.section-link:hover {
+  background: var(--primary-hover-color);
+  border-color: var(--primary-hover-color);
+  color: var(--text-inverse-color);
+  text-decoration: none;
+}
+
+.section-link:active {
+  background: var(--primary-active-color);
+  border-color: var(--primary-active-color);
+}
+
+/* Advantages */
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border-light-color);
+  border-top: 0.5px solid var(--border-light-color);
+  border-bottom: 0.5px solid var(--border-light-color);
+  margin: 0 0 3rem;
+}
+
+.advantage-card {
+  padding: 2rem 1.5rem;
+  background: var(--background-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.advantage-icon {
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.advantage-card h3 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.advantage-card p {
+  font-size: 0.8rem;
+  color: var(--text-secondary-color);
+  margin: 0;
+  line-height: 1.5;
+  white-space: normal;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero {
+    padding: 3rem 2rem;
+    min-height: 380px;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .advantages {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    padding: 2.5rem 1.5rem;
+    min-height: 320px;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+  }
+  .hero::before {
+    background: linear-gradient(
+      to top,
+      rgba(252, 250, 255, 0.92) 40%,
+      rgba(252, 250, 255, 0.4) 100%
+    );
+  }
+  .hero-content {
+    max-width: 100%;
+    gap: 12px;
+  }
+  .hero h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  .hero-subtitle {
+    font-size: 0.875rem;
+    max-width: 100%;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 8px;
+    width: 50%;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .section-block {
+    margin: 0 0.25rem 2rem;
+  }
+  .section-title {
+    font-size: 1.4rem;
+  }
+  .advantages {
+    grid-template-columns: 1fr;
+    margin: 0 0 2rem;
+  }
+  .advantage-card {
+    padding: 1.5rem 1.25rem;
+    flex-direction: row;
+    text-align: left;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .advantage-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .advantage-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 380px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}

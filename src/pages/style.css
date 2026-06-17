@@ -1,0 +1,80 @@
+@import "./src/variables.css";
+
+.cgu {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  background: var(--background-color);
+}
+
+.cgu_container {
+  width: 100%;
+  max-width: 720px;
+  padding: 0;
+}
+
+.cgu_back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: var(--text-muted-color);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: color 0.2s ease;
+}
+
+.cgu_back:hover {
+  color: var(--primary-color);
+}
+
+.cgu_title {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  margin: 0 0 0.4rem;
+  color: var(--text-color);
+}
+
+.cgu_meta {
+  font-size: 0.75rem;
+  color: var(--text-muted-color);
+  margin: 0;
+  letter-spacing: 0.2px;
+}
+
+.cgu_divider {
+  border: none;
+  border-top: 0.5px solid var(--border-light-color);
+  margin: 1.75rem 0;
+}
+
+.cgu_section {
+  padding: 1.25rem 0;
+  border-bottom: 0.5px solid var(--border-light-color);
+}
+
+.cgu_section:last-child {
+  border-bottom: none;
+}
+
+.cgu_section h2 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin: 0 0 0.75rem;
+}
+
+.cgu_section p {
+  font-size: 0.875rem;
+  line-height: 1.8;
+  color: var(--text-secondary-color);
+  margin: 0 0 0.5rem;
+}
+
+.cgu_section p:last-child {
+  margin-bottom: 0;
+}

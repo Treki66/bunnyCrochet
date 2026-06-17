@@ -1,0 +1,714 @@
+{
+    "creations": [
+        {
+            "id": "1",
+            "name": "Totoro et son ami",
+            "description": "Totoro et son petit compagnon, en version amigurumi ! Un duo tout doux inspiré de l'univers Ghibli, parfait pour la déco ou pour un câlin",
+            "categories": ["Peluche"],
+            "sizes": {
+                "3mm chenille": 20,
+                "3mm coton": 25,
+                "6mm chenille": 40
+            },
+            "images": [
+                { "image": "/creations/totoro_1.jpg", "label": "3mm chenille" },
+                { "image": "/creations/totoro_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/totoro_3.jpg", "label": "3mm chenille" },
+                { "image": "/creations/totoro_4.jpg", "label": "3mm chenille" },
+                { "image": "/creations/totoro_5.jpg", "label": "6mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison du fil de fer présent dans les oreilles", "Sur demande, le fil de fer peut être retiré des oreilles et les yeux brodés pour une version adaptée aux tout-petits"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin", "Sur demande, version sans fil de fer / yeux brodés pour une naissance"]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Hippopotame",
+            "description": "Un hippopotame bien dodu, avec son gros nez. Simple, doux et increvable — bref, le copain idéal pour les tout-petits comme pour les grands.",
+            "sizes": {
+                "3mm chenille": 15,
+                "3mm coton": 20,
+                "6mm chenille": 30
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/hippo_1.jpg", "label": "3mm coton" },
+                { "image": "/creations/hippo_2.jpg", "label": "3mm coton" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Convient dès la naissance", "Aucune pièce détachable"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin", "Parfait pour une naissance"]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Quéquette",
+            "description": "Bon, on ne va pas se mentir, celui-là fait toujours rire. Une création toute simple, un peu décalée, parfaite pour un cadeau d'anniversaire qui surprend (et qui détend l'ambiance).",
+            "sizes": {
+                "3mm chenille": 5,
+                "3mm coton": 8,
+                "6mm chenille": 15
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/quequette_1.jpg", "label": "6mm chenille" },
+                { "image": "/creations/quequette_2.jpg", "label": "6mm chenille" },
+                { "image": "/creations/quequette_3.jpg", "label": "6mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Sur demande, les yeux peuvent être brodés pour une version adaptée aux tout-petits"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Onigiri",
+            "description": "Une petite boule de riz toute ronde, façon onigiri japonais. Mignonne, compacte et tellement pratique à emporter partout — sac, étagère, bureau, elle se sent bien n'importe où.",
+            "sizes": {
+                "3mm chenille": 8,
+                "3mm coton": 12,
+                "6mm chenille": 18
+            },
+            "categories": ["Peluche", "Porte-clé"],
+            "images": [
+                { "image": "/creations/onigiri_peluche_1.jpg", "label": "3mm chenille" },
+                { "image": "/creations/onigiri_peluche_2.jpg", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Sur demande, les yeux peuvent être brodés pour une version adaptée aux tout-petits"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "Onigiri (Coussin)",
+            "description": "La version XXL et moelleuse de l'onigiri : un vrai coussin, douillet et un peu décalé, pour le canapé ou le lit. Aussi à l'aise en déco qu'en câlin du soir.",
+            "sizes": {
+                "6mm chenille": 40
+            },
+            "categories": ["Coussin"],
+            "images": [
+                { "image": "/creations/onigiri_coussin_1.jpg", "label": "6mm chenille" },
+                { "image": "/creations/onigiri_coussin_2.jpg", "label": "6mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Sur demande, les yeux peuvent être brodés pour une version adaptée aux tout-petits"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "name": "Méduse",
+            "description": "Une méduse en crochet, avec ses tentacules qui ondulent doucement. Un peu hypnotisante, très apaisante — l'idéal pour une chambre ou un coin lecture.",
+            "sizes": {
+                "3mm chenille": 8,
+                "3mm coton": 12
+            },
+            "categories": ["Porte-clé"],
+            "images": [
+                { "image": "/creations/meduse_1.png", "label": "3mm chenille" },
+                { "image": "/creations/meduse_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/meduse_3.jpg", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle", "Porte-clé disponible (+0,50 €)"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Cette création n'est pas proposée en version brodée uniquement"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "name": "Pingouin",
+            "description": "Un petit pingouin tout simple, avec son bonnet, sa bouille ronde et son air un peu maladroit. Increvable de mignonnerie, à offrir ou à garder pour soi.",
+            "sizes": {
+                "3mm chenille": 15,
+                "3mm coton": 20,
+                "6mm chenille": 30
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/pingouin_1.jpg", "label": "6mm chenille" },
+                { "image": "/creations/pingouin_2.jpg", "label": "6mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Sur demande, les yeux peuvent être brodés pour une version adaptée aux tout-petits"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "name": "Hamster",
+            "description": "Rond comme une boule, doux comme tout : ce hamster amigurumi a tout pour devenir le doudou préféré. Petit format, gros effet câlin.",
+            "sizes": {
+                "3mm chenille": 15,
+                "3mm coton": 20,
+                "6mm chenille": 30
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/hamster_1.jpg", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Cette création n'est pas proposée en version brodée uniquement"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "name": "Montagne",
+            "description": "Une petite montagne en crochet, toute douce et minimaliste, avec son grand sourire et sa joie contagieuse. Posée sur une étagère ou accrochée en porte-clé, elle apporte une touche fun et nature à n'importe quel coin.",
+            "sizes": {
+                "3mm chenille": 8,
+                "3mm coton": 12,
+                "6mm chenille": 18
+            },
+            "categories": ["Peluche", "Porte-clé"],
+            "images": [
+                { "image": "/creations/montagne_1.jpg", "label": "3mm chenille" },
+                { "image": "/creations/montagne_2.jpg", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle", "Porte-clé disponible sur les modèles 3mm (+0,50 €)"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Sur demande, les yeux peuvent être brodés pour une version adaptée aux tout-petits"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "name": "Chat banane",
+            "description": "Un chat... dans une banane. Oui, vraiment. Une création complètement loufoque qui fait toujours sourire — parfaite pour les amateurs d'humour et de créations qui sortent de l'ordinaire.",
+            "sizes": {
+                "3mm chenille": 10,
+                "3mm coton": 15,
+                "6mm chenille": 25
+            },
+            "categories": ["Peluche", "Porte-clé"],
+            "images": [
+                { "image": "/creations/chat_banane_1.jpg", "label": "3mm chenille" },
+                { "image": "/creations/chat_banane_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/chat_banane_3.png", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle", "Porte-clé disponible sur les modèles 3mm (+0,50 €)"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Convient dès la naissance", "Aucune pièce détachable"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin", "Parfait pour une naissance"]
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "name": "Baleine",
+            "description": "Une grande baleine toute en rondeurs, douce et apaisante. Avec elle, direction l'océan version cocooning — parfait pour les amoureux de la mer (et des câlins).",
+            "sizes": {
+                "3mm chenille": 20,
+                "3mm coton": 25,
+                "6mm chenille": 40
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/baleine_1.jpg", "label": "6mm chenille" },
+                { "image": "/creations/baleine_2.jpg", "label": "6mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Sur demande, les yeux peuvent être brodés pour une version adaptée aux tout-petits"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "name": "Petit Âne",
+            "description": "Un petit âne tout simple, avec ses grandes oreilles et son air attendrissant. Une peluche pleine de douceur, qui rappelle la campagne et les bonnes vieilles histoires.",
+            "sizes": {
+                "3mm chenille": 15,
+                "3mm coton": 20,
+                "6mm chenille": 30
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/ane_1.png", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Convient dès la naissance", "Aucune pièce détachable"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin", "Parfait pour une naissance"]
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "name": "Âne Rigolo",
+            "description": "La version un peu plus déjantée du petit âne, avec une bouille qui fait toujours rire. Même tendresse que son cousin, mais avec une bonne dose d'humour en plus.",
+            "sizes": {
+                "3mm chenille": 15,
+                "3mm coton": 20,
+                "6mm chenille": 30
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/ane_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/ane_3.jpg", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Cette création n'est pas proposée en version brodée uniquement"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "name": "Éléphant",
+            "description": "Un éléphant tout en rondeurs, avec de grandes oreilles et un air paisible. Solide, doux et increvable — un classique qui traverse les générations sans prendre une ride.",
+            "sizes": {
+                "3mm chenille": 15,
+                "3mm coton": 20,
+                "6mm chenille": 30
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/elephant_1.png", "label": "6mm chenille" },
+                { "image": "/creations/elephant_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/elephant_3.jpg", "label": "3mm chenille" },
+                { "image": "/creations/elephant_4.jpg", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Convient dès la naissance", "Aucune pièce détachable"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin", "Parfait pour une naissance"]
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "name": "Poupée",
+            "description": "Une petite poupée au crochet, douce et délicate, avec ce charme un peu rétro qui ne se démode jamais. Parfaite pour jouer, pour décorer, ou les deux.",
+            "sizes": {
+                "3mm chenille": 20,
+                "3mm coton": 25,
+                "6mm chenille": 35
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/poupee_1.jpg", "label": "6mm chenille" },
+                { "image": "/creations/poupee_2.jpg", "label": "6mm chenille" },
+                { "image": "/creations/poupee_3.jpg", "label": "6mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Sur demande, les yeux peuvent être brodés pour une version adaptée aux tout-petits"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "16",
+            "name": "Vache",
+            "description": "Une vache toute ronde avec ses taches et son air paisible. Un petit bout de ferme tout doux à poser dans une chambre ou à glisser dans les bras.",
+            "sizes": {
+                "3mm chenille": 15,
+                "3mm coton": 20,
+                "6mm chenille": 30
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/vache_1.jpg", "label": "6mm chenille" },
+                { "image": "/creations/vache_2.jpg", "label": "6mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Cette création n'est pas proposée en version brodée uniquement"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "17",
+            "name": "Fleur mini-coussin",
+            "description": "Un mini coussin en forme de fleur, parfait pour ajouter une touche de couleur sans prendre de place. Petit format, grand sourire garanti.",
+            "sizes": {
+                "6mm chenille": 20
+            },
+            "categories": ["Coussin"],
+            "images": [
+                { "image": "/creations/fleur_mini_coussin_1.jpg", "label": "6mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Convient dès la naissance", "Aucune pièce détachable"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin", "Parfait pour une naissance"]
+                }
+            ]
+        },
+        {
+            "id": "18",
+            "name": "Fleur coussin",
+            "description": "La grande sœur du mini coussin fleur : même esprit, mais en format encore plus généreux et confortable. Parfaite pour le canapé ou pour un coin cocooning.",
+            "sizes": {
+                "6mm chenille": 30
+            },
+            "categories": ["Coussin"],
+            "images": [
+                { "image": "/creations/fleur_coussin_1.jpg", "label": "6mm chenille" },
+                { "image": "/creations/fleur_coussin_2.jpg", "label": "6mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Convient dès la naissance", "Aucune pièce détachable"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin", "Parfait pour une naissance"]
+                }
+            ]
+        },
+        {
+            "id": "19",
+            "name": "Tortue",
+            "description": "Une tortue toute douce, avec sa carapace bien ronde et son rythme tranquille. Disponible en peluche ou en porte-clé, pour t'accompagner à ton rythme.",
+            "sizes": {
+                "3mm chenille": 8,
+                "3mm coton": 12,
+                "6mm chenille": 18
+            },
+            "categories": ["Peluche", "Porte-clé"],
+            "images": [
+                { "image": "/creations/tortue_1.jpg", "label": "3mm chenille" },
+                { "image": "/creations/tortue_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/tortue_3.jpg", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle", "Porte-clé disponible sur les modèles 3mm (+0,50 €)"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Déconseillé aux moins de 3 ans en raison de petits éléments (yeux de sécurité)", "Sur demande, les yeux peuvent être brodés pour une version adaptée aux tout-petits"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "20",
+            "name": "Fleur porte-clé",
+            "description": "Une petite fleur en crochet, légère et discrète, pour accrocher à un sac ou à un trousseau de clés. Un petit détail fait main qui change tout.",
+            "sizes": {
+                "3mm coton": 5
+            },
+            "categories": ["Porte-clé"],
+            "images": [
+                { "image": "/creations/fleur_porte_cle_1.jpg", "label": "3mm chenille" },
+                { "image": "/creations/fleur_porte_cle_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/fleur_porte_cle_3.jpg", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle", "Porte-clé disponible (+0,50 €)"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Sa petite taille peut ne pas convenir aux jeunes enfants", "À réserver de préférence à un usage adulte ou aux enfants plus grands"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin"]
+                }
+            ]
+        },
+        {
+            "id": "21",
+            "name": "Cochon",
+            "description": "Un petit cochon tout rose et tout rond, avec un nez en forme de groin adorable. Increvable de mignonnerie, parfait pour les amoureux de la ferme.",
+            "sizes": {
+                "3mm chenille": 15,
+                "3mm coton": 20,
+                "6mm chenille": 30
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/cochon_1.jpg", "label": "3mm chenille" },
+                { "image": "/creations/cochon_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/cochon_3.jpg", "label": "3mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Convient dès la naissance", "Aucune pièce détachable"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin", "Parfait pour une naissance"]
+                }
+            ]
+        }
+    ],
+    "patterns": [
+        {
+            "id": "1",
+            "name": "Patron de Totoro",
+            "description": "Patron complet pour réaliser la peluche Totoro au crochet.\n\nInclut les instructions étape par étape, les abréviations utilisées et les conseils de montage.\n\nConvient aux crocheteurs ayant une expérience de base en amigurumi.",
+            "sizes": {
+                "Patron": 5
+            },
+            "categories": [],
+            "images": [
+                { "image": "/creations/totoro_1.jpg", "label": "3mm chenille" },
+                { "image": "/creations/totoro_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/totoro_5.jpg", "label": "6mm chenille" },
+                { "image": "/patterns/patron-totoro.png", "label": "Patron de Totoro"}
+            ]
+        }
+    ]
+}

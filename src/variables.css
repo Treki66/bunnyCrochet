@@ -1,0 +1,95 @@
+:root {
+  /* =========================
+     BRAND COLORS
+  ========================= */
+
+  --primary-color: #b892e6;
+  /* Soft lavender */
+
+  --primary-hover-color: #a77ddc;
+
+  --primary-active-color: #9568d0;
+
+
+  --secondary-color: #e5d4f8;
+  /* Very light lavender */
+
+  --secondary-hover-color: #dcc6f5;
+
+  --secondary-active-color: #d1b6f0;
+
+
+  --accent-color: #d89ac7;
+  /* Soft pink-lilac accent */
+
+  --accent-hover-color: #cd86ba;
+
+  --accent-active-color: #bf72aa;
+
+
+  /* =========================
+     BACKGROUNDS
+  ========================= */
+
+  --background-color: #fcfaff;
+
+  --background-secondary-color: #f5effd;
+
+  --background-tertiary-color: #ede3fa;
+
+
+  --surface-color: #ffffff;
+
+  --surface-hover-color: #faf7ff;
+
+  --surface-active-color: #f3edfd;
+
+
+  /* =========================
+     TEXT
+  ========================= */
+
+  --text-color: #1f1827;
+
+  --text-secondary-color: #6b5e79;
+
+  --text-muted-color: #9a90a8;
+
+  --text-inverse-color: #ffffff;
+
+
+  --link-color: var(--primary-color);
+
+  --link-hover-color: var(--primary-hover-color);
+
+
+  /* =========================
+     BORDERS
+  ========================= */
+
+  --border-color: #ddd0f2;
+
+  --border-light-color: #ede5fa;
+
+  --border-strong-color: #cbb7eb;
+
+
+  /* =========================
+     STATUS COLORS
+  ========================= */
+
+  --success-color: #5bbf8a;
+
+  --warning-color: #f2b36b;
+
+  --error-color: #e46b7a;
+
+  --info-color: #6aa9e9;
+
+
+  /* =========================
+     OVERLAY
+  ========================= */
+
+  --overlay-color: rgba(42, 33, 55, 0.45);
+}
