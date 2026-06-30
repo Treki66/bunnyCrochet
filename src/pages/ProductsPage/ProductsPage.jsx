@@ -1,7 +1,8 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import ItemCard from '@/components/ItemCard';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { getCategoriesFromProducts } from '@/utils';
+import { getCategoriesFromProducts, getPrefilteredProducts } from '@/utils';
 import "./style.css";
 
 const everyItemName = 'Tout';
@@ -23,7 +24,6 @@ function getMinPrice(product) {
 function getPageNumbers(current, total) {
   const pages = [];
   const range = 1;
-
   for (let i = 1; i <= total; i++) {
     if (i === 1 || i === total || (i >= current - range && i <= current + range)) {
       pages.push(i);
@@ -44,10 +44,41 @@ export function ProductsPage({
   const categories = getCategoriesFromProducts(productType);
   categories.unshift(everyItemName);
 
-  const [activeFilter, setActiveFilter] = useState(everyItemName);
-  const [activeSort, setActiveSort] = useState('default');
+  const [searchParams, setSearchParams] = useSearchParams();
   const [sortOpen, setSortOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
+
+  const activeFilter = searchParams.get('filter') || everyItemName;
+  const activeSort = searchParams.get('sort') || 'default';
+  const currentPage = parseInt(searchParams.get('page') || '1', 10);
+
+  const handleFilterChange = (filter) => {
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      next.set('filter', filter);
+      next.set('page', '1');
+      return next;
+    });
+  };
+
+  const handleSortChange = (sort) => {
+    setSortOpen(false);
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      next.set('sort', sort);
+      next.set('page', '1');
+      return next;
+    });
+  };
+
+  const goToPage = (page) => {
+    if (page < 1 || page > totalPages || page === clampedPage) return;
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      next.set('page', String(page));
+      return next;
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const filteredProducts = useMemo(() => {
     let result = activeFilter === everyItemName
@@ -56,44 +87,33 @@ export function ProductsPage({
 
     switch (activeSort) {
       case 'price-asc':
-        return [...result].sort((a, b) => getMinPrice(a) - getMinPrice(b));
+        result = [...result].sort((a, b) => getMinPrice(a) - getMinPrice(b));
+        break;
       case 'price-desc':
-        return [...result].sort((a, b) => getMinPrice(b) - getMinPrice(a));
+        result = [...result].sort((a, b) => getMinPrice(b) - getMinPrice(a));
+        break;
       case 'name-asc':
-        return [...result].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+        result = [...result].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+        break;
       case 'name-desc':
-        return [...result].sort((a, b) => b.name.localeCompare(a.name, 'fr'));
+        result = [...result].sort((a, b) => b.name.localeCompare(a.name, 'fr'));
+        break;
       default:
-        return result;
+        break;
     }
+
+    return getPrefilteredProducts(result);
   }, [activeFilter, activeSort, products]);
 
   const totalPages = Math.max(1, Math.ceil(filteredProducts.length / ITEMS_PER_PAGE));
-
-  // Reset to page 1 whenever filter or sort changes
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [activeFilter, activeSort]);
-
-  // Clamp current page if filtering reduces total pages
-  useEffect(() => {
-    if (currentPage > totalPages) {
-      setCurrentPage(totalPages);
-    }
-  }, [totalPages, currentPage]);
+  const clampedPage = Math.min(Math.max(1, currentPage), totalPages);
 
   const paginatedProducts = useMemo(() => {
-    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    const start = (clampedPage - 1) * ITEMS_PER_PAGE;
     return filteredProducts.slice(start, start + ITEMS_PER_PAGE);
-  }, [filteredProducts, currentPage]);
+  }, [filteredProducts, clampedPage]);
 
   const activeSortLabel = SORT_OPTIONS.find((o) => o.value === activeSort)?.label;
-
-  const goToPage = (page) => {
-    if (page < 1 || page > totalPages || page === currentPage) return;
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   return (
     <div className="creations-page">
@@ -113,7 +133,7 @@ export function ProductsPage({
             <button
               key={filter}
               className={`filter-tag ${activeFilter === filter ? 'active' : ''}`}
-              onClick={() => setActiveFilter(filter)}
+              onClick={() => handleFilterChange(filter)}
             >
               {filter}
             </button>
@@ -142,7 +162,7 @@ export function ProductsPage({
                 <button
                   key={option.value}
                   className={`sort-option ${activeSort === option.value ? 'active' : ''}`}
-                  onClick={() => { setActiveSort(option.value); setSortOpen(false); }}
+                  onClick={() => handleSortChange(option.value)}
                 >
                   {option.label}
                   {activeSort === option.value && (
@@ -160,7 +180,7 @@ export function ProductsPage({
       <div className="products-container">
         {paginatedProducts.map((product, index) => (
           <ItemCard
-            key={`${activeFilter}-${activeSort}-${currentPage}-${product.id}`}
+            key={`${activeFilter}-${activeSort}-${clampedPage}-${product.id}`}
             images={product.images}
             name={product.name}
             promotion={product.promotion}
@@ -179,7 +199,7 @@ export function ProductsPage({
             </svg>
             <p className="products-empty-title">Aucun produit trouvé</p>
             <p className="products-empty-subtitle">Aucun produit ne correspond à la catégorie sélectionnée.</p>
-            <button className="products-empty-reset" onClick={() => setActiveFilter(everyItemName)}>
+            <button className="products-empty-reset" onClick={() => handleFilterChange(everyItemName)}>
               Voir tous les produits
             </button>
           </div>
@@ -190,8 +210,8 @@ export function ProductsPage({
         <div className="pagination">
           <button
             className="pagination-arrow"
-            onClick={() => goToPage(currentPage - 1)}
-            disabled={currentPage === 1}
+            onClick={() => goToPage(clampedPage - 1)}
+            disabled={clampedPage === 1}
             aria-label="Page précédente"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -199,13 +219,13 @@ export function ProductsPage({
             </svg>
           </button>
 
-          {getPageNumbers(currentPage, totalPages).map((page, index) => (
+          {getPageNumbers(clampedPage, totalPages).map((page, index) => (
             page === '...' ? (
               <span key={`ellipsis-${index}`} className="pagination-ellipsis">…</span>
             ) : (
               <button
                 key={page}
-                className={`pagination-page ${page === currentPage ? 'active' : ''}`}
+                className={`pagination-page ${page === clampedPage ? 'active' : ''}`}
                 onClick={() => goToPage(page)}
               >
                 {page}
@@ -215,8 +235,8 @@ export function ProductsPage({
 
           <button
             className="pagination-arrow"
-            onClick={() => goToPage(currentPage + 1)}
-            disabled={currentPage === totalPages}
+            onClick={() => goToPage(clampedPage + 1)}
+            disabled={clampedPage === totalPages}
             aria-label="Page suivante"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

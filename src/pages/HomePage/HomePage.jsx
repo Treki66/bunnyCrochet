@@ -1,7 +1,8 @@
 import React from 'react';
 import data from "@/data.json";
 import ItemsCarousel from '@/components/ItemsCarousel';
-import { PRODUCTS_TYPES, ROUTES } from '@/constants';
+import { PRODUCTS_TYPES } from '@/constants';
+import { getPrefilteredProducts } from '@/utils';
 import './style.css';
 
 export default function HomePage() {
@@ -31,7 +32,7 @@ export default function HomePage() {
           <h2 className="section-title">Mes créations</h2>
           <p className="section-subtitle">Peluches, coussins et porte-clés faits main</p>
         </div>
-        <ItemsCarousel items={data.creations} productType={PRODUCTS_TYPES.CREATION} />
+        <ItemsCarousel items={getPrefilteredProducts(data.creations)} productType={PRODUCTS_TYPES.CREATION} />
         <div className="section-footer">
           <a href="/creations" className="section-link">Voir tout →</a>
         </div>
@@ -42,7 +43,7 @@ export default function HomePage() {
           <h2 className="section-title">Mes patrons</h2>
           <p className="section-subtitle">Réalisez vos propres créations au crochet</p>
         </div>
-        <ItemsCarousel items={data.patterns} productType={PRODUCTS_TYPES.PATTERN} />
+        <ItemsCarousel items={getPrefilteredProducts(data.patterns)} productType={PRODUCTS_TYPES.PATTERN} />
         <div className="section-footer">
           <a href="/patrons" className="section-link">Voir tout →</a>
         </div>

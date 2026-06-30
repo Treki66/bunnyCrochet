@@ -1,4 +1,4 @@
-@import "./src/variables.css";
+@import "../variables.css";
 
 .cgu {
   min-height: calc(100vh - 120px);

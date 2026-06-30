@@ -82,7 +82,7 @@ export default function SearchBar({ placeholder, value, onChange, data }) {
           <div className="search_dropdown">
             {filtered.map((item) => (
               <Link
-                key={item.id}
+                key={`${item.type ?? 'unknown'}-${item.id}-${item.name}`}
                 to={`${item.type === PRODUCTS_TYPES.CREATION ? ROUTES.CREATION : ROUTES.PATTERN}/${slugify(item.name)}`}
                 className="search_item"
                 onClick={() => { onChange(''); setOpen(false); setMobileOpen(false); }}

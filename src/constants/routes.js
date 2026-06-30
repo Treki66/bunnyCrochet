@@ -5,6 +5,7 @@ export const ROUTES = {
   PATTERNS: "/patrons",
   PATTERN: "/patron",
   CONDITIONS_UTILISATION: "/cgu",
+  CONTACT: '/contact',
   MENTIONS_LEGALES: "/mentions_legales",
   YARN_GUIDE_PAGE: "/guide_des_matieres"
 };
@@ -15,6 +16,7 @@ export const ROUTES_NAMES = {
   'Création': '/creation',
   'Patrons': "/patrons",
   'Patron': "/patron",
+  'Contact': '/contact',
   'Conditions générales d\'utilisation': '/cgu',
   'Mentions légales': '/mentions_legales',
   'Types de laine': '/guide_des_matieres'

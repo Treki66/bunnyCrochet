@@ -12,6 +12,7 @@ import AnimatedPage from '@/pages/AnimatedPage';
 import TermsOfUse from '@/pages/TermsOfUse';
 import LegalNotice from '@/pages/LegalNotice';
 import YarnGuidePage from '@/pages/YarnGuidePage';
+import ContactPage from '@/pages/ContactPage';
 import './style.css';
 
 function ScrollToTop() {
@@ -48,6 +49,7 @@ function App() {
             <Route path={ROUTES.CONDITIONS_UTILISATION} element={<TermsOfUse />} />
             <Route path={ROUTES.MENTIONS_LEGALES} element={<LegalNotice />} />
             <Route path={ROUTES.YARN_GUIDE_PAGE} element={<YarnGuidePage />} />
+            <Route path={ROUTES.CONTACT} element={<ContactPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </AnimatedPage>

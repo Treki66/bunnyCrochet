@@ -19,6 +19,15 @@ export function getAllProductsForAutocompletion() {
   return allProducts;
 }
 
+export function getPrefilteredProducts(result) {
+  return [...result].sort((a, b) => {
+    const aHasBadge = !!a.badge;
+    const bHasBadge = !!b.badge;
+    if (aHasBadge === bHasBadge) return 0;
+    return aHasBadge ? -1 : 1;
+  });
+}
+
 export function getCategoriesFromProducts(productType) {
   const categoryList = [];
   const products = productType === PRODUCTS_TYPES.CREATION ? data.creations : data.patterns;

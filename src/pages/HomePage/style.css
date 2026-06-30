@@ -3,7 +3,7 @@
   min-height: 460px;
   display: flex;
   align-items: center;
-  background-image: url("/backgroundImage.png");
+  background-image: url("/backgroundImage.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

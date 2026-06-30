@@ -277,7 +277,9 @@
             "categories": ["Peluche", "Porte-clé"],
             "images": [
                 { "image": "/creations/montagne_1.jpg", "label": "3mm chenille" },
-                { "image": "/creations/montagne_2.jpg", "label": "3mm chenille" }
+                { "image": "/creations/montagne_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/montagne_3.jpg", "label": "3mm chenille" },
+                { "image": "/creations/montagne_4.jpg", "label": "3mm chenille" }
             ],
             "informations": [
                 {
@@ -408,8 +410,10 @@
             },
             "categories": ["Peluche"],
             "images": [
-                { "image": "/creations/ane_2.jpg", "label": "3mm chenille" },
-                { "image": "/creations/ane_3.jpg", "label": "3mm chenille" }
+                { "image": "/creations/ane_rigolo_1.jpg", "label": "3mm chenille" },
+                { "image": "/creations/ane_rigolo_2.jpg", "label": "3mm chenille" },
+                { "image": "/creations/ane_rigolo_3.jpg", "label": "3mm chenille" },
+                { "image": "/creations/ane_rigolo_4.jpg", "label": "3mm chenille" }
             ],
             "informations": [
                 {
@@ -469,6 +473,12 @@
             "id": "15",
             "name": "Poupée",
             "description": "Une petite poupée au crochet, douce et délicate, avec ce charme un peu rétro qui ne se démode jamais. Parfaite pour jouer, pour décorer, ou les deux.",
+            "badge": {
+                "text": "En stock - 6mm",
+                "backgroundColor": "#DCFCE7",
+                "borderColor": "#22C55E",
+                "textColor": "#166534"
+            },
             "sizes": {
                 "3mm chenille": 20,
                 "3mm coton": 25,
@@ -503,6 +513,12 @@
             "id": "16",
             "name": "Vache",
             "description": "Une vache toute ronde avec ses taches et son air paisible. Un petit bout de ferme tout doux à poser dans une chambre ou à glisser dans les bras.",
+            "badge": {
+                "text": "En stock - 6mm",
+                "backgroundColor": "#DCFCE7",
+                "borderColor": "#22C55E",
+                "textColor": "#166534"
+            },
             "sizes": {
                 "3mm chenille": 15,
                 "3mm coton": 20,
@@ -692,6 +708,40 @@
                     "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin", "Parfait pour une naissance"]
                 }
             ]
+        },
+        {
+            "id": "22",
+            "name": "Lapin",
+            "description": "Un corps allongé avec deux grandes oreilles dressées, deux petits bras et des pattes arrondies. Une silhouette simple et reconnaissable, pour la décoration ou les câlins.",
+            "sizes": {
+                "3mm chenille": 15,
+                "3mm coton": 20,
+                "6mm chenille": 30
+            },
+            "categories": ["Peluche"],
+            "images": [
+                { "image": "/creations/lapin_1.jpg", "label": "6mm chenille" },
+                { "image": "/creations/lapin_2.jpg", "label": "6mm chenille" },
+                { "image": "/creations/lapin_3.jpg", "label": "6mm chenille" }
+            ],
+            "informations": [
+                {
+                    "title": "Caractéristiques",
+                    "lines": ["Fait entièrement à la main", "Matériaux doux et adaptés aux enfants", "Temps de fabrication variable selon le modèle"]
+                },
+                {
+                    "title": "Entretien",
+                    "lines": ["Lavage à l'eau froide/tiède à la main recommandé", "Séchage à l'air libre", "Ne pas utiliser de javel"]
+                },
+                {
+                    "title": "Sécurité & âge recommandé",
+                    "lines": ["Convient dès la naissance", "Aucune pièce détachable"]
+                },
+                {
+                    "title": "Idée cadeau",
+                    "lines": ["Idéal pour un anniversaire", "Un cadeau unique, fait main avec soin", "Parfait pour une naissance"]
+                }
+            ]
         }
     ],
     "patterns": [
@@ -707,7 +757,7 @@
                 { "image": "/creations/totoro_1.jpg", "label": "3mm chenille" },
                 { "image": "/creations/totoro_2.jpg", "label": "3mm chenille" },
                 { "image": "/creations/totoro_5.jpg", "label": "6mm chenille" },
-                { "image": "/patterns/patron-totoro.png", "label": "Patron de Totoro"}
+                { "image": "/patterns/patron-totoro.webp", "label": "Patron de Totoro" }
             ]
         }
     ]

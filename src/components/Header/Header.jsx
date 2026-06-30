@@ -17,6 +17,7 @@ export default function Header() {
     { to: ROUTES.CREATIONS, label: 'Mes créations' },
     { to: ROUTES.PATTERNS, label: 'Mes patrons' },
     { to: ROUTES.YARN_GUIDE_PAGE, label: 'Guide des matières' },
+    { to: ROUTES.CONTACT, label: 'Contact' },
   ];
 
   return (

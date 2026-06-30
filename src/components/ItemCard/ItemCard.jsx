@@ -23,6 +23,7 @@ export default function ItemCard({ images, name, badge, sizes, type, style }) {
                 alt={name}
                 className="card_image"
                 onError={() => setImgError(true)}
+                loading='lazy'
               />
               <div
                 className="card_hover_image"
@@ -40,7 +41,7 @@ export default function ItemCard({ images, name, badge, sizes, type, style }) {
             </div>
           )}
           {badge && (
-            <div className="card_badge" style={{ color: badge.color, border: "1px solid " + badge.color }}>
+            <div className="card_badge" style={{ color: badge.textColor, backgroundColor: badge.backgroundColor, border: "1px solid " + badge.borderColor }}>
               {badge.text}
             </div>
           )}

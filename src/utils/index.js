@@ -1,1 +1,1 @@
-export { getAllProductsForAutocompletion, getCategoriesFromProducts, slugify } from "./utils";
+export { getAllProductsForAutocompletion, getCategoriesFromProducts, getPrefilteredProducts, slugify } from "./utils";

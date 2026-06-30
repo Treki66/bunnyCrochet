@@ -7,7 +7,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import ItemsCarousel from "@/components/ItemsCarousel";
 import { PRODUCTS_TYPES, ROUTES } from "@/constants";
 import AccordionItem from "@/components/AccordionItem";
-import { slugify } from '@/utils';
+import { getPrefilteredProducts, slugify } from '@/utils';
 import "./style.css";
 
 const Arrow = ({ direction, onClick, disabled }) => (
@@ -212,7 +212,7 @@ export default function ProductPage({ productType }) {
           <div className="related-products-header">
             <h2>Vous aimerez aussi ...</h2>
           </div>
-          <ItemsCarousel items={carouselProducts} productType={productType} />
+          <ItemsCarousel items={getPrefilteredProducts(carouselProducts)} productType={productType} />
         </section>
       )}
     </div>

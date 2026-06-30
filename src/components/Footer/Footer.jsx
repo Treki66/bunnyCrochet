@@ -9,6 +9,7 @@ export default function Footer() {
         <span className="footer-brand">BunnyCrochet</span>
         <p className="footer-copy">© 2026 — Fait main avec ❤️</p>
         <nav className="footer-nav">
+          <Link to={ROUTES.CONTACT}>Contact</Link>
           <Link to={ROUTES.CONDITIONS_UTILISATION}>Conditions générales d'utilisation</Link>
           <Link to={ROUTES.MENTIONS_LEGALES}>Mentions légales</Link>
         </nav>
